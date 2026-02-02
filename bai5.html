@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HR Management</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <b>HR Management</b> <span>Home</span> <span>Contact</span>
+        <div class="search-area">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="top-bar">
+            <h2>Employee</h2>
+            <button class="btn-add">+ Add</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Position</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Fatima Beatriz</td>
+                    <td>fatima@gmail.com</td>
+                    <td>0985674321</td>
+                    <td>Staff</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Gabriel Hanna</td>
+                    <td>gabriel@gmail.com</td>
+                    <td>0353674231</td>
+                    <td>Staff</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal">
+        <div class="modal-h">New Employee</div>
+        <div class="modal-b">
+            <div class="row">
+                <div><label>Name</label><br><input type="text"></div>
+                <div><label>Email</label><br><input type="text"></div>
+            </div>
+            <div class="row">
+                <div><label>Phone</label><br><input type="text"></div>
+                <div>
+                    <label>Position</label><br>
+                    <select>
+                        <option>Staff</option>
+                        <option>Manager</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label>Sex:</label>
+                <input type="radio" name="g"> Male
+                <input type="radio" name="g"> Female
+            </div>
+        </div>
+        <div class="modal-f">
+            <button class="btn-save">Save</button>
+            <button class="btn-cancel">Cancel</button>
+        </div>
+    </div>
+
+</body>
+</html>
