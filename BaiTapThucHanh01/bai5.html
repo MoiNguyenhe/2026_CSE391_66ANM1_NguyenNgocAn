@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR Management</title>
+</head>
+<body>
+
+<!-- HEADER -->
+<table width="100%" border="1" cellpadding="5">
+    <tr>
+        <td><b>HR Management</b></td>
+        <td>
+            <a href="#">Home</a> |
+            <a href="#">Contact</a>
+        </td>
+        <td align="right">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- EMPLOYEE LIST -->
+<fieldset>
+    <legend><b>Employee</b></legend>
+
+    <p align="right">
+        <button>+ Add</button>
+    </p>
+
+    <table width="100%" border="1" cellpadding="5">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Position</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Fatima Beatriz</td>
+            <td>FatimaBeatriz@gmail.com</td>
+            <td>0985674321</td>
+            <td>Staff</td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Gabriel Hanna</td>
+            <td>GabrielHanna@gmail.com</td>
+            <td>0353674231</td>
+            <td>Staff</td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Charles Diya</td>
+            <td>CharlesDiya@gmail.com</td>
+            <td>0347658833</td>
+            <td>Staff</td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Frank Lamdo</td>
+            <td>FrankLamdo@gmail.com</td>
+            <td>0975444768</td>
+            <td>Manager</td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Louis Tom</td>
+            <td>LouisTom@gmail.com</td>
+            <td>0789568223</td>
+            <td>Staff</td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+
+<br><br>
+
+<!-- NEW EMPLOYEE FORM -->
+<fieldset>
+    <legend><b>New Employee</b></legend>
+
+    <table cellpadding="5">
+        <tr>
+            <td>Name</td>
+            <td><input type="text"></td>
+            <td>Email</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input type="text"></td>
+            <td>Position</td>
+            <td>
+                <select>
+                    <option>-- Select Position --</option>
+                    <option>Staff</option>
+                    <option>Manager</option>
+                    <option>CEO</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td colspan="3">
+                <input type="radio" name="sex"> Male
+                <input type="radio" name="sex"> Female
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" align="right">
+                <button>Save</button>
+                <button>Cancel</button>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+
+</body>
+</html>
