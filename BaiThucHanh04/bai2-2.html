@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Form Đặt Hàng</title>
+<link rel="stylesheet" href="bai2-2.css">
+</head>
+
+<body>
+
+<h2>Đặt Hàng</h2>
+
+<form id="orderForm">
+
+<div class="form-group">
+<label>Tên sản phẩm</label>
+<select id="product">
+<option value="">-- Chọn sản phẩm --</option>
+<option value="Ao">Áo</option>
+<option value="Quan">Quần</option>
+<option value="Giay">Giày</option>
+</select>
+<span class="error" id="productError"></span>
+</div>
+
+<div class="form-group">
+<label>Số lượng</label>
+<input type="number" id="quantity">
+<span class="error" id="quantityError"></span>
+</div>
+
+<div class="form-group">
+<label>Ngày giao hàng</label>
+<input type="date" id="deliveryDate">
+<span class="error" id="dateError"></span>
+</div>
+
+<div class="form-group">
+<label>Địa chỉ giao</label>
+<input type="text" id="address">
+<span class="error" id="addressError"></span>
+</div>
+
+<div class="form-group">
+<label>Ghi chú</label>
+<textarea id="note"></textarea>
+<div id="noteCount">0/200</div>
+<span class="error" id="noteError"></span>
+</div>
+
+<div class="form-group">
+<label>Thanh toán</label><br>
+
+<input type="radio" name="payment" value="COD"> COD
+<input type="radio" name="payment" value="Bank"> Chuyển khoản
+<input type="radio" name="payment" value="Wallet"> Ví điện tử
+
+<br>
+<span class="error" id="paymentError"></span>
+
+</div>
+
+<div class="form-group">
+<label>Tổng tiền:</label>
+<div id="total">0</div>
+</div>
+
+<button type="submit">Đặt hàng</button>
+
+</form>
+
+
+<div id="confirmBox"></div>
+<div id="success"></div>
+
+<script src="bai2-2.js"></script>
+
+</body>
+</html>
