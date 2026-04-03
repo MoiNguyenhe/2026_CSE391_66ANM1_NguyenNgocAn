@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HộiThảoHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="left">
+    <b>HộiThảoHub</b>
+    <input id="searchInput" type="text" placeholder="Tìm Nhanh">
+    </div>
+    <div class="right"></div>
+    <span>Trang chủ</span>
+    <span>Danh Sách</span>
+    <span>Thêm Mới</span>
+    <span>Giới Thiệu</span>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Bảng điều khiển hội thảo</h2>
+  <button class="add-btn" onclick="openForm()">+ Thêm mới</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tên Hội Thảo</th>
+        <th>Diễn Giả</th>
+        <th>Email</th>
+        <th>Ngày Tổ Chức</th>
+        <th>Địa Điểm</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <h3>Thêm hội thảo mới</h3>
+
+    <label for="name">Tên hội thảo</label>
+    <input id="name" placeholder="Nhập tên hội thảo" required>
+    <div class="error" id="nameError"></div>
+
+    <label for="phone">Diễn Giả</label>
+    <input id="phone" placeholder="Họ tên diễn giả" required>
+    <div class="error" id="phoneError"></div>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Email@example.com" required>
+    <div class="error" id="emailError"></div>
+
+    <label for="date">Ngày Tổ Chức</label>
+    <input id="date" type="date" placeholder="mm/dd/yy" required>
+    <div class="error" id="dateError"></div>
+
+    <label for="position">Vị trí</label>
+    <input id="position" placeholder="Hội trường / địa chỉ" required>
+    <div class="error" id="phoneError"></div>
+    
+    <div class="btn-group">
+      <button onclick="closeForm()">Hủy</button>
+      <button class="save" onclick="addEmployee()">Lưu</button>
+    </div>
+  </div>
+</div>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
